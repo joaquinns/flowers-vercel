@@ -22,21 +22,7 @@ interface CartContextType {
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
-  const [cart, setCart] = useState<CartItem[]>([
-    // example for testing must be added with buttons in the card components
-    {
-      id: "1",
-      name: "pizza",
-      price: 7,
-      quantity: 2,
-    },
-    {
-      id: "2",
-      name: "cerveza",
-      price: 4,
-      quantity: 1,
-    },
-  ]);
+  const [cart, setCart] = useState<CartItem[]>([]);
 
   useEffect(() => {
     const savedCart = localStorage.getItem("cart");
