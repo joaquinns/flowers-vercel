@@ -1,0 +1,16 @@
+# Ignorar dependencias locales
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Ignorar configuraciones locales
+.env
+.next/cache
+.next/standalone
+out
+public/static/cache
+
+# Ignorar archivos del editor
+.idea
+.vscode
+.DS_Store
