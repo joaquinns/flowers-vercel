@@ -23,7 +23,7 @@ interface CardProps {
 export const Card = ({
   product,
   title = "Titulo de ejemplo",
-  description = "Esto es el ejemplo de una descripcion, puneta lambre bicho esto funciona? cabron conte cabron habla claro, brrrrrrr. Menos mal ya terminamos esa mierda de juego",
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   imgURL,
 }: CardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -60,9 +60,8 @@ export const Card = ({
         </div>
         <div className="p-2 flex-1 relative">
           <p
-            className={`text-base ${
-              isExpanded ? "line-clamp-none" : "line-clamp-2"
-            }`}
+            className={`text-base ${isExpanded ? "line-clamp-none" : "line-clamp-2"
+              }`}
           >
             {description}
           </p>
