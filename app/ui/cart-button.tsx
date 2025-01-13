@@ -75,7 +75,7 @@ export const CartButton = () => {
           cart.map((item) => (
             <div
               key={item.id}
-              className="flex items-center justify-between py-4 border-b overflow-y-auto"
+              className="flex items-center justify-between py-4 border-b overflow-y-auto gap-2"
             >
               <Image
                 width={50}
